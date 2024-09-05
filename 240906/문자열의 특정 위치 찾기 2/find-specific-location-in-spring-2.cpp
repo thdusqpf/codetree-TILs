@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    string fruit[5] = {"appel", "banana", "grape", "blueberry", "orange"};
+    string fruit[5] = {"apple", "banana", "grape", "blueberry", "orange"};
     char c;
     cin >> c;
     int ans = 0;

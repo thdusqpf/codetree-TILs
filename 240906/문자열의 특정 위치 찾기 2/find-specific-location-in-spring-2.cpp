@@ -7,11 +7,9 @@ int main() {
     cin >> c;
     int ans = 0;
     for (int i = 0; i < 5; i++) {
-        for (int j = 2; j <= 3; j++) {
-            if (fruit[i][j] == c) {
-                cout << fruit[i] << '\n';
-                ans++;
-            }
+        if (fruit[i][2] == c || fruit[i][3] == c) {
+            cout << fruit[i] << '\n';
+            ans++;
         }
     }
     cout << ans;

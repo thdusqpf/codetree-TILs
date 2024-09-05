@@ -6,8 +6,10 @@ int main() {
     cin >> s1 >> s2 >> s3;
 
     int min = s1.length();
+
     if (min > s2.length()) {
         if (s2.length() < s3.length()) min = s2.length();
+        else min = s3.length();
     }
     else {
         if (min > s3.length()) min = s3.length();
@@ -21,7 +23,7 @@ int main() {
     else {
         if (max < s3.length()) max = s3.length();
     }
-    
+
     cout << max - min;
     return 0;
 }

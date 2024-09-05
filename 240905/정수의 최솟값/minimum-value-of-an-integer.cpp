@@ -4,10 +4,11 @@ using namespace std;
 int FindMin(int a, int b, int c) {
     int min = a;
     if (min > b) {
-        if (b < c) min = b;
+        if (b <= c) min = b;
     }
     else {
         if (min > c) min = c;
+        
     }
     return min;
 }

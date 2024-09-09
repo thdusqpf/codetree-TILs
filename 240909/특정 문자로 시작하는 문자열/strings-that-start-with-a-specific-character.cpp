@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int n, cnt, len = 0;
+    int n, cnt = 0, len = 0;
     double avg;
     cin >> n;
     string str[n];

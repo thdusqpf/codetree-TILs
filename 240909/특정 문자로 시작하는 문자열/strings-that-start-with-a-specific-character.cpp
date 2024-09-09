@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
 
 int main() {
@@ -17,7 +18,8 @@ int main() {
             len += str[i].length();
         }
     }
-    avg = len / cnt;
+    if (cnt == 0) avg = 0;
+    else  avg = len / cnt;
     cout << cnt << " ";
     cout << fixed;
     cout.precision(2);

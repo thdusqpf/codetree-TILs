@@ -6,7 +6,7 @@ int main() {
     cin >> s;
     int n;
     cin >> n;
-    if (n <= s.length()) {
+    if (n < s.length()) {
         for (int i = s.length() - 1; i >= s.length() - n; i--)
             cout << s[i];
     }

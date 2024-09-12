@@ -14,7 +14,7 @@ int main() {
         n++;
         if (a == b || n == len) break;
     }
-    if (n == 0) cout << -1;
+    if (n == len) cout << -1;
     else cout << n;
 
     return 0;

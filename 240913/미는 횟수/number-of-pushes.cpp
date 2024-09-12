@@ -14,7 +14,8 @@ int main() {
         n++;
         if (a == b) break;
     }
-    cout << n;
+    if (n == 0) cout << -1;
+    else cout << n;
 
     return 0;
 }

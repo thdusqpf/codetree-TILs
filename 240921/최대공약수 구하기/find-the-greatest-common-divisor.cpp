@@ -5,7 +5,7 @@ using namespace std;
 int mx;
 int GCD(int n, int m) {
     for (int i = 1; i <= min(n, m); i++) {
-        if (12 % i == 0 && 18 % i == 0) 
+        if (n % i == 0 && m % i == 0) 
             mx = i;
     }
     return mx;

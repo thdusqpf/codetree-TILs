@@ -6,3 +6,4 @@ def func(n):
     print('*' * n)
 
 n = int(input())
+func(n)

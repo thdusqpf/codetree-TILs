@@ -17,14 +17,26 @@ int main() {
 
     sort(words, words + n);
 
+
     int count = 0;
     for (int i = 0; i < n; i++)
     {
-        if (t[0] == words[i][0] && t[1] == words[i][1]) count++;
-        if (count == k) cout << words[i];
+        bool isSame = true;
+        for (int j = 0; j < t.size(); j++)
+        {
+            if (t[j] != words[i][j]) 
+            {
+                isSame = false;
+                break;
+            } 
+        }
+        if (isSame) count++;
+        if (count == k) 
+        {
+            cout << words[i];
+            break;
+        }            
     }
-
-
 
     return 0;
 }

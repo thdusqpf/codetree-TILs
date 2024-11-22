@@ -14,12 +14,31 @@ bool isSame(string s1, string s2)
 
 int main() {
     string s1, s2;
+    int count[128];
+
     cin >> s1 >> s2;
 
-    sort(s1.begin(), s1.end());
-    sort(s2.begin(), s2.end());
+    for (int i = 0; i < 128; i++)
+    {
+        count[i] = 0;
+    }
+
+    for (int i = 0; i < s1.size(); i++)
+    {
+        count[s1[i]]++;
+    }
     
-    if (isSame(s1, s2)) cout << "Yes";
-    else cout << "No";
+    for (int i = 0; i < s2.size(); i++)
+    {
+        count[s2[i]]--;
+    }
+
+    for (int i = 0; i < 128; i++)
+    {
+        if (count[i] != 0) cout << "No";
+    }
+    cout << "Yes";
+    // if (isSame(s1, s2)) cout << "Yes";
+    // else cout << "No";
     return 0;
 }

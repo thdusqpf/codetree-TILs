@@ -35,8 +35,10 @@ int main() {
 
     for (int i = 0; i < 128; i++)
     {
-        if (count[i] != 0) cout << "No";
-        return 0;
+        if (count[i] != 0) {
+            cout << "No";
+            return 0;
+        }
     }
     cout << "Yes";
     // if (isSame(s1, s2)) cout << "Yes";
